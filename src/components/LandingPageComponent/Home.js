@@ -10,7 +10,7 @@ export const Home = () => {
             <div className="Home-content" >         
                 <div className="card">
                     <div className="description">
-                        <h1>Hello, I am <span>Naiyar Imam</span></h1>
+                        <h1>Hello, I am <span>Naiyar</span></h1>
                         <p style={{fontSize: '1rem'}}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis at possimus fugit ratione, est ea dolores aut eligendi. Culpa tempore sunt laudantium ipsa voluptas quas fuga rerum sequi consequatur eos.</p>
                     </div>
                 </div>
