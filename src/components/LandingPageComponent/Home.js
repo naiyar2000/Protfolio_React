@@ -78,10 +78,8 @@ export const Home = () => {
             <div className="Home-content" >         
                 <div className="card">
                     <div className="description">
-                        <h1><span className="hello">Hello, I am</span> <span className="name">Naiyar</span></h1>
-                        <p className="tagline">
-                            <span className="txt-type" data-wait="2000" data-words='["Developer", "Designer", "Creator"]'></span>
-                        </p>
+                        <h1><span className="hello">Hello, I am</span><span className="name">Naiyar</span></h1>
+                        <span className="txt-type" data-wait="2000" data-words='["Developer", "Designer", "Creator"]'></span>
                         <p style={{fontSize: '1rem'}}>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit, labore ducimus praesentium unde, quasi illum consequatur cupiditate obcaecati repellat, architecto nisi! Eligendi nostrum nihil soluta eius? Tempora dicta labore assumenda.</p>
                     </div>
                 </div>

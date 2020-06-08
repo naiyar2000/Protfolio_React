@@ -110,25 +110,21 @@ section#Home .Home-content .description {
   border-radius: 0.5em;
 }
 
-section#Home .Home-content .description > h1 {
+section#Home .Home-content .description h1 {
   font-family: Courgette , sans-serif;
   margin-bottom: 0;
   color: #000000a4;
 }
 
-section#Home .Home-content .description > h1 .hello {
+section#Home .Home-content .description h1 .hello {
   display: block;
   font-size: 20px;
 }
 
-section#Home .Home-content .description > h1 .name {
+section#Home .Home-content .description h1 .name {
   color: #422f22;
   display: block;
   text-shadow: 4px 4px 4px rgba(196, 125, 19, 0.699);
-}
-
-section#Home .Home-content .description l.tagline {
-  margin-bottom: 5px;
 }
 
 section#Home .Home-content .description .txt-type {
