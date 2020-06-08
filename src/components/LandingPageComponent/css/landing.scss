@@ -91,13 +91,27 @@ section{
                 border-radius: 0.5em;
                 >h1{
                     font-family: Courgette , sans-serif;
-                    margin-bottom: 1rem;
+                    margin-bottom: 0;
                     color: #000000a4;
-                    >span{
+                    .hello{
+                        
+                        display: block;
+                        font-size: 20px;
+                    }
+                    .name{
                         color: $primary_Home;
                         display: block;
                         text-shadow: 4px 4px 4px rgba(196, 125, 19, 0.699);
                     }
+                }
+                l.tagline{
+                    margin-bottom: 5px;
+                }
+                .txt-type{
+                    font-family: monospace;
+                    border-right: 2px solid #000;
+                    font-size: 25px;
+                    color: rgb(80, 50, 5);
                 }
                 >p{
                     font-family: Courgette , cursive;
@@ -155,14 +169,6 @@ section{
                 background-size: cover;
                 background-attachment: fixed;
                 background-position: 10vh -40vh;
-                // img{
-                //     position: absolute;
-                //     z-index: 0;
-                //     top: -35vh;
-                //     left: 20vh;
-                //     height: 60vh;
-                //     // filter: blur(2px);
-                // } 
                 h5{
                     position: relative;
                     left: -15px;
@@ -292,14 +298,6 @@ section{
                         position: absolute;
                         top: -10vh;
                         font-size: xx-large;
-                        &::before{
-                            content: 'About Me';
-                            display: block;
-                            font-size: medium;
-                            position: relative;
-                            top: 12px;
-                            left: 70px;
-                        }
                     }
                 } 
                 .service_skills{
@@ -459,8 +457,6 @@ section{
         }
     }
 }
-
-
 
 
 

@@ -112,14 +112,30 @@ section#Home .Home-content .description {
 
 section#Home .Home-content .description > h1 {
   font-family: Courgette , sans-serif;
-  margin-bottom: 1rem;
+  margin-bottom: 0;
   color: #000000a4;
 }
 
-section#Home .Home-content .description > h1 > span {
+section#Home .Home-content .description > h1 .hello {
+  display: block;
+  font-size: 20px;
+}
+
+section#Home .Home-content .description > h1 .name {
   color: #422f22;
   display: block;
   text-shadow: 4px 4px 4px rgba(196, 125, 19, 0.699);
+}
+
+section#Home .Home-content .description l.tagline {
+  margin-bottom: 5px;
+}
+
+section#Home .Home-content .description .txt-type {
+  font-family: monospace;
+  border-right: 2px solid #000;
+  font-size: 25px;
+  color: #503205;
 }
 
 section#Home .Home-content .description > p {
@@ -357,15 +373,6 @@ section#Services .service_container .service_info .service_text h1 {
   position: absolute;
   top: -10vh;
   font-size: xx-large;
-}
-
-section#Services .service_container .service_info .service_text h1::before {
-  content: 'About Me';
-  display: block;
-  font-size: medium;
-  position: relative;
-  top: 12px;
-  left: 70px;
 }
 
 section#Services .service_container .service_info .service_skills {
