@@ -367,8 +367,17 @@ section#Services .service_container .service_info .service_text {
 
 section#Services .service_container .service_info .service_text h1 {
   position: absolute;
-  top: -10vh;
+  top: -7vh;
   font-size: xx-large;
+}
+
+section#Services .service_container .service_info .service_text h1::before {
+  content: "Services";
+  display: block;
+  font-size: 15px;
+  position: absolute;
+  top: -1.6vh;
+  left: 9vh;
 }
 
 section#Services .service_container .service_info .service_skills {
@@ -494,7 +503,7 @@ section#Portfolio .portfolio_container > div {
   width: 16rem;
   min-height: 100vh;
   position: fixed;
-  z-index: 3;
+  z-index: 4;
   background: #fffffff6;
   -webkit-transition: 2s ease;
   transition: 2s ease;

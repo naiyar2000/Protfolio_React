@@ -1,5 +1,4 @@
 import React from 'react'
-import { Navbar } from './LandingPageComponent/Navbar'
 import { Home } from './LandingPageComponent/Home'
 import { About } from './LandingPageComponent/About'
 import './LandingPageComponent/css/landing.css'
@@ -19,7 +18,6 @@ export const LandingPage = () => {
             <Portfolio />
             <Blog />
             <Contact />
-            <Navbar />
         </div>
     )
 }

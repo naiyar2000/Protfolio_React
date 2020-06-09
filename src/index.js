@@ -3,11 +3,16 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
+import { Navbar } from './components/LandingPageComponent/Navbar';
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  <div>
+    <Navbar />
+    <React.StrictMode>
+      <App />
+    </React.StrictMode>
+  </div>,
+  
   document.getElementById('root')
 );
 

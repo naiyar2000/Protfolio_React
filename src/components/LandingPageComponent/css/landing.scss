@@ -293,8 +293,16 @@ section{
                     z-index: 2;
                     h1{
                         position: absolute;
-                        top: -10vh;
+                        top: -7vh;
                         font-size: xx-large;
+                        &::before{
+                            content: "Services";
+                            display: block;
+                            font-size: 15px;
+                            position: absolute;
+                            top: -1.6vh;
+                            left: 9vh;
+                        }
                     }
                 } 
                 .service_skills{
@@ -392,7 +400,7 @@ section{
     width: 16rem;
     min-height: 100vh;
     position: fixed;
-    z-index: 3;
+    z-index: 4;
     background: #fffffff6;
     transition: 2s ease;
     top: 0;
