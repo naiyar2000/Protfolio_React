@@ -5,7 +5,7 @@ export default () => (
   
     <Particles
       canvasClassName="example"
-      height="60vh"
+      height="50vh"
       width="100%"
       params={{
         particles: {
@@ -17,13 +17,13 @@ export default () => (
             }
           },
           color: {
-            value: "#ffe892"
+            value: "#000000"
           },
           shape: {
             type: "circle",
             stroke: {
               width: 0,
-              color: "#ffe892"
+              color: "#000000"
             },
             polygon: {
               nb_sides: 3
@@ -57,7 +57,7 @@ export default () => (
           line_linked: {
             enable: true,
             distance: 100,
-            color: "#ffe892",
+            color: "#000000",
             opacity: 0.3687847739990702,
             width: 0.6413648243462091
           },

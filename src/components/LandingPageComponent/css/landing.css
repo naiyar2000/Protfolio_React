@@ -12,9 +12,6 @@
   width: 100%;
   height: 100vh;
   overflow-y: scroll;
-  scroll-behavior: smooth;
-  -ms-scroll-snap-type: y mandatory;
-      scroll-snap-type: y mandatory;
   background: #ffffff;
 }
 
@@ -38,36 +35,22 @@
 
 .NavAnimation-enter-active {
   opacity: 1;
-  -webkit-transition: opacity transform 1ms ease;
-  transition: opacity transform 1ms ease;
+  -webkit-transition: opacity  1ms linear;
+  transition: opacity  1ms linear;
 }
 
 .NavAnimation-exit {
-  opacity: 1;
-  -webkit-transform: translateX(-65rem);
-          transform: translateX(-65rem);
+  -webkit-transform: translateX(-16rem);
+          transform: translateX(-16rem);
 }
 
 .NavAnimation-exit-active {
-  opacity: 0;
-  -webkit-transition: opacity transform 1ms ease;
-  transition: opacity transform 1ms ease;
+  -webkit-transition: 1ms linear;
+  transition: 1ms linear;
 }
 
 section {
   scroll-snap-align: center;
-  min-height: 100vh;
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 
 section#Home {
@@ -122,7 +105,7 @@ section#Home .Home-content .description h1 .hello {
 }
 
 section#Home .Home-content .description h1 .name {
-  color: #422f22;
+  color: #000000;
   display: block;
   text-shadow: 4px 4px 4px rgba(196, 125, 19, 0.699);
 }
@@ -137,7 +120,7 @@ section#Home .Home-content .description .txt-type {
 section#Home .Home-content .description > p {
   font-family: Courgette , cursive;
   text-shadow: none;
-  font-weight: bold;
+  color: #000000;
 }
 
 section#Home .Home-content .links i {
@@ -161,6 +144,10 @@ section#Home .Home-content .links .fa-linkedin {
   color: #0e76a8;
 }
 
+section#About {
+  height: 100vh;
+}
+
 section#About .about_container {
   position: relative;
 }
@@ -169,7 +156,7 @@ section#About .about_container #tsparticles {
   position: absolute;
   z-index: 1;
   top: 0;
-  height: 60vh;
+  height: 50vh;
   width: 100%;
 }
 
@@ -184,9 +171,9 @@ section#About .about_container .example {
 section#About .about_container .about_info {
   font-family: Poppins;
   padding: 2em;
-  height: 60vh;
+  height: 50vh;
   background-color: #00000000;
-  color: #ffffff;
+  color: #000000;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -200,10 +187,6 @@ section#About .about_container .about_info {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background: url(../img/close-up-photo-ofg-light-bulb-716398.jpg);
-  background-size: cover;
-  background-attachment: fixed;
-  background-position: 10vh -40vh;
 }
 
 section#About .about_container .about_info h5 {
@@ -216,7 +199,7 @@ section#About .about_container .about_info .separator1 {
   position: relative;
   height: 3px;
   width: 100px;
-  background-color: #ffffff;
+  background-color: #000000;
   left: -124px;
   top: 12px;
 }
@@ -232,7 +215,7 @@ section#About .about_container .about_info .separator2 {
   position: relative;
   height: 4px;
   width: 350.2px;
-  background-color: #ffffff;
+  background-color: #000000;
   left: 0px;
   top: -10px;
 }
@@ -245,10 +228,7 @@ section#About .about_container .about_bio {
   position: relative;
   z-index: 3;
   margin: 0em;
-  height: 40vh;
-  background: url(../img/caffeine-coffee-coffee-beans-roasted-585750.jpg);
-  background-attachment: fixed;
-  background-position: center;
+  height: 50vh;
 }
 
 section#About .about_container .about_bio img {
@@ -268,13 +248,20 @@ section#About .about_container .about_bio h2 {
 }
 
 section#About .about_container .about_bio ul {
-  color: #163841;
+  list-style: none;
+  color: #000000;
+  margin-left: 10px;
 }
 
 section#About .about_container .about_bio ul li {
-  font-size: 40;
+  font-size: 20px;
   font-weight: lighter;
-  padding: 0.4em 1em;
+  padding: 0.5em 1em;
+  -webkit-box-shadow: 6px 4px 12px -5px rgba(0, 0, 0, 0.75);
+          box-shadow: 6px 4px 12px -5px rgba(0, 0, 0, 0.75);
+  background: rgba(172, 173, 172, 0.664);
+  width: 70%;
+  margin: 0.5em;
 }
 
 section#About .about_container .about_bio ul li b {
@@ -290,7 +277,7 @@ section#About .about_container .about_bio .Download_cv {
   width: 200px;
   color: #ffffff;
   font-weight: bold;
-  background-color: #422f22;
+  background-color: #000000;
   border: none;
   -webkit-transition: -webkit-transform 0.2s ease;
   transition: -webkit-transform 0.2s ease;
@@ -307,10 +294,6 @@ section#About .about_container .about_bio .Download_cv:hover {
 
 section#Services {
   font-family: 'Poppins', sans-serif;
-  background: url(../img/pathway-between-walls-2775140.jpg);
-  background-size: cover;
-  background-attachment: fixed;
-  background-position: center center;
 }
 
 section#Services .service_container {
@@ -318,7 +301,7 @@ section#Services .service_container {
 }
 
 section#Services .service_container .service_info {
-  min-height: 89vh;
+  min-height: 100vh;
   font-family: Poppins;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -338,7 +321,7 @@ section#Services .service_container .service_info {
 
 section#Services .service_container .service_info .separator3 {
   position: relative;
-  background: #ffffff;
+  background: #000000;
   height: 3px;
   width: 62px;
   top: -54px;
@@ -347,8 +330,8 @@ section#Services .service_container .service_info .separator3 {
 
 section#Services .service_container .service_info .separator4 {
   position: relative;
-  background: #ffffff;
-  height: 3px;
+  background: #000000;
+  height: 4px;
   width: 162px;
   top: -15px;
   left: -90px;
@@ -408,7 +391,7 @@ section#Services .service_container .service_info .service_skills > div {
           box-shadow: 6px 4px 12px -5px rgba(0, 0, 0, 0.75);
   padding: 1em;
   background-size: contain;
-  color: #f7f0f0;
+  color: #000000;
   -webkit-transition: -webkit-transform 1s ease;
   transition: -webkit-transform 1s ease;
   transition: transform 1s ease;
@@ -455,11 +438,7 @@ section#Services .service_container .service_info .service_skills > div:hover {
 }
 
 section#Portfolio {
-  background: url(../img/Home_back.jpg);
-  background-size: cover;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-position: center center;
+  height: 100vh;
 }
 
 section#Portfolio .portfolio_container {
@@ -473,8 +452,19 @@ section#Portfolio .portfolio_container {
 }
 
 section#Portfolio .portfolio_container > div {
-  background: #ffffff59;
+  background: #96616159;
   border-radius: 2px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-shadow: 6px 4px 12px -5px rgba(0, 0, 0, 0.75);
+          box-shadow: 6px 4px 12px -5px rgba(0, 0, 0, 0.75);
 }
 
 .fa-bars {
@@ -482,7 +472,7 @@ section#Portfolio .portfolio_container > div {
   z-index: 3;
   top: 10px;
   left: 10px;
-  color: #422f22;
+  color: #000000;
 }
 
 .fa-bars:hover {
@@ -491,7 +481,7 @@ section#Portfolio .portfolio_container > div {
 }
 
 .fa-close {
-  color: #422f22;
+  color: #000000;
 }
 
 .fa-close:hover {
@@ -594,7 +584,7 @@ section#Portfolio .portfolio_container > div {
           transform: scale(1.05);
   -webkit-box-shadow: 3px 1px 8px 1px rgba(0, 0, 0, 0.75);
           box-shadow: 3px 1px 8px 1px rgba(0, 0, 0, 0.75);
-  border: 1.1px solid #422f22;
+  border: 1.1px solid #000000;
 }
 
 .navbar .navbar-nav .nav-item .nav-link .link-text {

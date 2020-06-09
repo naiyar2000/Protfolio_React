@@ -1,6 +1,5 @@
 import React from 'react';
 import './css/landing.css';
-import image from './img/warm-coffee-drink-1684151.jpg';
 
 
 export const Home = () => {
@@ -74,7 +73,7 @@ export const Home = () => {
 
     return (
         <section id="Home">   
-            <img src={image} alt="logo" height="100%" width="100%" style={{position: 'absolute',}}/> 
+            {/* <img src={image} alt="logo" height="100%" width="100%" style={{position: 'absolute',}}/>  */}
             <div className="Home-content" >         
                 <div className="card">
                     <div className="description">

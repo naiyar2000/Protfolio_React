@@ -3,11 +3,11 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
-import { Navbar } from './components/LandingPageComponent/Navbar';
+import Navbar  from './components/LandingPageComponent/Navbar';
 
 ReactDOM.render(
   <div>
-    <Navbar />
+    <Navbar></Navbar>
     <React.StrictMode>
       <App />
     </React.StrictMode>

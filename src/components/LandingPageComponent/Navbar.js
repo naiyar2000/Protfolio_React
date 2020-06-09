@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 import {CSSTransition} from 'react-transition-group';
 import './css/landing.css';
 
-export const Navbar = () => {
+const Navbar = () => {
     const [show, setShow] = useState(false);
     const toggle = () => {
         setShow(!show);
@@ -12,7 +12,7 @@ export const Navbar = () => {
             <i onClick={()=>toggle()} style={{visibility: show ? "hidden": "visible"}} className="fa fa-bars fa-2x"/>
             <CSSTransition
                 in={show}
-                timeout={650}
+                timeout={10}
                 classNames="NavAnimation"
                 unmountOnExit
             >
@@ -37,3 +37,6 @@ export const Navbar = () => {
         </div>
     )
 }
+
+
+export default React.memo(Navbar);
