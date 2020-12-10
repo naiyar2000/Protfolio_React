@@ -28,7 +28,7 @@ const Navbar = () => {
                     <li onClick={()=>toggle()} className="nav-item"><a href="#About" className="nav-link"><i className="fas fa-address-card fa-2x"/><span className="link-text">About</span></a></li>
                     <li onClick={()=>toggle()} className="nav-item"><a href="#Services" className="nav-link"><i className="fas fa-bell fa-2x"/><span className="link-text">Services</span></a></li>
                     <li onClick={()=>toggle()} className="nav-item"><a href="#Portfolio" className="nav-link"><i className="fas fa-briefcase fa-2x"/><span className="link-text">Portfolio</span></a></li>
-                    <li onClick={()=>toggle()} className="nav-item"><a href="#Blog" className="nav-link"><i className="fas fa-file fa-2x" style={{marginLeft: '-0.2em'}}/><span className="link-text">Blog</span></a></li>
+                    {/* <li onClick={()=>toggle()} className="nav-item"><a href="#Blog" className="nav-link"><i className="fas fa-file fa-2x" style={{marginLeft: '-0.2em'}}/><span className="link-text">Blog</span></a></li> */}
                     <li onClick={()=>toggle()} className="nav-item"><a href="#Contact" className="nav-link"><i className="fas fa-address-book fa-2x"/><span className="link-text">Contact</span></a></li>
                 </ul>
             </nav>

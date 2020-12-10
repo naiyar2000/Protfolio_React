@@ -5,7 +5,7 @@ export default () => (
   
     <Particles
       canvasClassName="example"
-      height="40vh"
+      height="100vh"
       width="100%"
       params={{
         particles: {

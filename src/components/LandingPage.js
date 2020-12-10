@@ -4,7 +4,7 @@ import { About } from './LandingPageComponent/About'
 import './LandingPageComponent/css/landing.css'
 import { Services } from './LandingPageComponent/Services'
 import { Portfolio } from './LandingPageComponent/Portfolio'
-import { Blog } from './LandingPageComponent/Blog'
+// import { Blog } from './LandingPageComponent/Blog'
 import { Contact } from './LandingPageComponent/Contact'
 
 
@@ -16,7 +16,7 @@ export const LandingPage = () => {
             <About />
             <Services />
             <Portfolio />
-            <Blog />
+            {/* <Blog /> */}
             <Contact />
         </div>
     )
