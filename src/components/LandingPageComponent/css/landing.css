@@ -56,6 +56,7 @@ section {
 section#Home {
   position: relative;
   height: 100vh;
+  background-color: #000000;
 }
 
 section#Home .Home-content {
@@ -87,7 +88,7 @@ section#Home .Home-content .description {
   width: 350px;
   height: 300px;
   padding: 1em;
-  background-color: #ffffff09;
+  background-color: #251170;
   -webkit-box-shadow: 3px 1px 8px 1px #422f22a4;
           box-shadow: 3px 1px 8px 1px #422f22a4;
   border-radius: 0.5em;
@@ -100,27 +101,28 @@ section#Home .Home-content .description h1 {
 }
 
 section#Home .Home-content .description h1 .hello {
+  color: #ffffff;
   display: block;
   font-size: 20px;
 }
 
 section#Home .Home-content .description h1 .name {
-  color: #000000;
+  color: #ffffff;
   display: block;
   text-shadow: 4px 4px 4px rgba(196, 125, 19, 0.699);
 }
 
 section#Home .Home-content .description .txt-type {
   font-family: monospace;
-  border-right: 2px solid #000;
+  border-right: 2px solid #ffffff;
   font-size: 25px;
-  color: #503205;
+  color: #ffffff;
 }
 
 section#Home .Home-content .description > p {
   font-family: Courgette , cursive;
   text-shadow: none;
-  color: #000000;
+  color: #ffffff;
 }
 
 section#Home .Home-content .links i {
@@ -137,18 +139,15 @@ section#Home .Home-content .links .fa-facebook-square {
 }
 
 section#Home .Home-content .links .fa-github {
-  color: #000000;
+  color: #ffffff;
 }
 
 section#Home .Home-content .links .fa-linkedin {
   color: #0e76a8;
 }
 
-section#About {
-  height: 100vh;
-}
-
 section#About .about_container {
+  background-color: #000;
   position: relative;
 }
 
@@ -156,7 +155,6 @@ section#About .about_container #tsparticles {
   position: absolute;
   z-index: 1;
   top: 0;
-  height: 50vh;
   width: 100%;
 }
 
@@ -169,115 +167,67 @@ section#About .about_container .example {
 }
 
 section#About .about_container .about_info {
+  padding: 18px;
+  line-height: 1.42857143;
   font-family: Poppins;
-  padding: 2em;
-  height: 50vh;
-  background-color: #00000000;
-  color: #000000;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 
-section#About .about_container .about_info h5 {
+section#About .about_container .about_info .intro > h3 {
+  color: #ffffff;
+  line-height: 30px;
+  font-size: 30px;
+  margin: 10px 0px 20px;
   position: relative;
-  left: -15px;
-  font-size: 14px;
 }
 
-section#About .about_container .about_info .separator1 {
-  position: relative;
-  height: 3px;
-  width: 100px;
-  background-color: #000000;
-  left: -124px;
-  top: 12px;
+section#About .about_container .about_info .intro > h3:after {
+  content: '';
+  width: 28%;
+  height: 135%;
+  border-bottom: solid 4px #eb83f8;
+  border-top: solid 4px #eb83f8;
+  position: absolute;
+  left: 0;
+  top: -15%;
+}
+
+section#About .about_container .about_info .intro > h3:before {
+  content: 'About Me';
+  font-size: 18px;
+  font-weight: 500;
+  position: absolute;
+  left: 30%;
+  top: -30%;
 }
 
 section#About .about_container .about_info h3 {
-  position: relative;
-  margin-top: 0px;
-  font-size: 30px;
-  border: none;
-}
-
-section#About .about_container .about_info .separator2 {
-  position: relative;
-  height: 4px;
-  width: 350.2px;
-  background-color: #000000;
-  left: 0px;
-  top: -10px;
+  display: block;
+  -webkit-margin-before: 1em;
+          margin-block-start: 1em;
+  -webkit-margin-after: 1em;
+          margin-block-end: 1em;
+  -webkit-margin-start: 0px;
+          margin-inline-start: 0px;
+  -webkit-margin-end: 0px;
+          margin-inline-end: 0px;
 }
 
 section#About .about_container .about_info p {
-  position: relative;
+  color: #ffffff;
+  margin-top: 6vh;
 }
 
-section#About .about_container .about_bio {
-  position: relative;
-  z-index: 3;
-  margin: 0em;
-  height: 50vh;
+section#About .about_container .about_info .intro {
+  font: 30px 'Poppins';
 }
 
-section#About .about_container .about_bio img {
-  position: absolute;
-  z-index: -1;
-  top: 0vh;
-  height: 40vh;
-  -webkit-filter: blur(2px);
-          filter: blur(2px);
-}
-
-section#About .about_container .about_bio h2 {
-  margin: 0;
-  padding-top: 0.5em;
-  padding-left: 0.6em;
-  text-decoration: underline;
-}
-
-section#About .about_container .about_bio ul {
-  list-style: none;
-  color: #000000;
-  margin-left: 10px;
-}
-
-section#About .about_container .about_bio ul li {
-  font-size: 20px;
-  font-weight: lighter;
-  padding: 0.5em 1em;
-  -webkit-box-shadow: 6px 4px 12px -5px rgba(0, 0, 0, 0.75);
-          box-shadow: 6px 4px 12px -5px rgba(0, 0, 0, 0.75);
-  background: rgba(172, 173, 172, 0.664);
-  width: 70%;
-  margin: 0.5em;
-}
-
-section#About .about_container .about_bio ul li b {
-  margin: 0px 7px 0px 0px;
-  display: inline-block;
-  width: 90px;
-  font-weight: bold;
-}
-
-section#About .about_container .about_bio .Download_cv {
-  margin: 1em 1.3em;
+section#About .about_container .Download_cv {
+  margin: 1em 0em;
   padding: 1em 2em;
-  width: 200px;
+  width: 45%;
   color: #ffffff;
   font-weight: bold;
-  background-color: #000000;
+  background-color: #251170;
   border: none;
   -webkit-transition: -webkit-transform 0.2s ease;
   transition: -webkit-transform 0.2s ease;
@@ -285,11 +235,116 @@ section#About .about_container .about_bio .Download_cv {
   transition: transform 0.2s ease, -webkit-transform 0.2s ease;
 }
 
-section#About .about_container .about_bio .Download_cv:hover {
+section#About .about_container .Download_cv:before {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
   border: none;
   cursor: pointer;
+}
+
+section#About .about_container .about_skills {
+  padding-top: 30px;
+  background-color: #251170;
+}
+
+section#About .about_container .about_skills > span {
+  position: relative;
+  color: #ffffff;
+  padding-left: 10em;
+}
+
+section#About .about_container .about_skills > span:before {
+  content: '';
+  width: 40%;
+  position: absolute;
+  border-bottom: solid 4px #eb83f8;
+  top: 45%;
+  left: 10%;
+}
+
+section#About .about_container .about_skills .skills {
+  padding: 18px;
+  padding-bottom: 4em;
+}
+
+section#About .about_container .about_skills .skills h3 {
+  color: #ffffff;
+}
+
+section#About .about_container .about_skills .skills > div > div {
+  padding-top: 1em;
+  padding-bottom: 1.3em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+section#About .about_container .about_skills .skills .webdesign {
+  position: relative;
+}
+
+section#About .about_container .about_skills .skills .webdesign:after {
+  content: '';
+  width: 80%;
+  position: absolute;
+  border-bottom: solid 10px #ffffff;
+  border-radius: 1em;
+  bottom: 5%;
+}
+
+section#About .about_container .about_skills .skills .react {
+  position: relative;
+}
+
+section#About .about_container .about_skills .skills .react:after {
+  content: '';
+  width: 60%;
+  position: absolute;
+  border-bottom: solid 10px #ffffff;
+  border-radius: 1em;
+  bottom: 5%;
+}
+
+section#About .about_container .about_skills .skills .mongodb {
+  position: relative;
+}
+
+section#About .about_container .about_skills .skills .mongodb:after {
+  content: '';
+  width: 90%;
+  position: absolute;
+  border-bottom: solid 10px #ffffff;
+  border-radius: 1em;
+  bottom: 5%;
+}
+
+section#About .about_container .about_skills .skills .flutter {
+  position: relative;
+}
+
+section#About .about_container .about_skills .skills .flutter:after {
+  content: '';
+  width: 70%;
+  position: absolute;
+  border-bottom: solid 10px #ffffff;
+  border-radius: 1em;
+  bottom: 5%;
+}
+
+section#About .about_container .about_skills .skills .firebase {
+  position: relative;
+}
+
+section#About .about_container .about_skills .skills .firebase:after {
+  content: '';
+  width: 75%;
+  position: absolute;
+  border-bottom: solid 10px #ffffff;
+  border-radius: 1em;
+  bottom: 5%;
 }
 
 section#Services {
@@ -472,7 +527,7 @@ section#Portfolio .portfolio_container > div {
   z-index: 3;
   top: 10px;
   left: 10px;
-  color: #000000;
+  color: #ffffff;
 }
 
 .fa-bars:hover {
@@ -481,7 +536,7 @@ section#Portfolio .portfolio_container > div {
 }
 
 .fa-close {
-  color: #000000;
+  color: #251170;
 }
 
 .fa-close:hover {

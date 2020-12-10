@@ -5,28 +5,28 @@ export default () => (
   
     <Particles
       canvasClassName="example"
-      height="50vh"
+      height="40vh"
       width="100%"
       params={{
         particles: {
           number: {
-            value: 300,
+            value: 100,
             density: {
               enable: true,
               value_area: 1803.4120608655228
             }
           },
           color: {
-            value: "#000000"
+            value: "#ffffff"
           },
           shape: {
             type: "circle",
             stroke: {
               width: 0,
-              color: "#000000"
+              color: "#ffffff"
             },
             polygon: {
-              nb_sides: 3
+              nb_sides: 4
             },
             image: {
               src: "img/github.svg",
@@ -35,8 +35,8 @@ export default () => (
             }
           },
           opacity: {
-            value: 0.7,
-            random: true,
+            value: 1,
+            random: false,
             anim: {
               enable: false,
               speed: 1,
@@ -45,8 +45,8 @@ export default () => (
             }
           },
           size: {
-            value: 3,
-            random: true,
+            value: 1,
+            random: false,
             anim: {
               enable: true,
               speed: 10,
@@ -56,19 +56,19 @@ export default () => (
           },
           line_linked: {
             enable: true,
-            distance: 100,
-            color: "#000000",
+            distance: 400,
+            color: "#ffffff",
             opacity: 0.3687847739990702,
             width: 0.6413648243462091
           },
           move: {
             enable: true,
             speed: 1,
-            direction: "top-right",
-            random: false,
+            direction: "none",
+            random: true,
             straight: false,
             out_mode: "out",
-            bounce: false,
+            bounce: true,
             attract: {
               enable: false,
               rotateX: 600,
@@ -91,7 +91,7 @@ export default () => (
           },
           modes: {
             grab: {
-              distance: 400,
+              distance: 550,
               line_linked: {
                 opacity: 1
               }
