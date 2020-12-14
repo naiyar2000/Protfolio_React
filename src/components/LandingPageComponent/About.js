@@ -48,7 +48,7 @@ export const About = () => {
                     </div>
                     </div>             
                 </div>
-                <ParticleComponent />
+                {/* <ParticleComponent /> */}
             </div>
         </section>
     )
