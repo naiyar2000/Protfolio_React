@@ -1,6 +1,6 @@
 import React from 'react';
 import './css/landing.css'
-import ParticleComponent from '../ParticleComponent';
+// import ParticleComponent from '../ParticleComponent';
 
 export const About = () => {
     return (
