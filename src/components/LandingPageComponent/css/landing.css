@@ -146,8 +146,21 @@ section#Home .Home-content .links .fa-linkedin {
   color: #0e76a8;
 }
 
-section#About .about_container {
+section#About {
+  position: relative;
   background-color: #000;
+}
+
+section#About #canvas1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 60vh;
+  width: 100vh;
+  background-color: #000;
+}
+
+section#About .about_container {
   position: relative;
 }
 
@@ -178,6 +191,36 @@ section#About .about_container .about_info .intro > h3 {
   font-size: 30px;
   margin: 10px 0px 20px;
   position: relative;
+  -webkit-animation-name: slideh3;
+          animation-name: slideh3;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+}
+
+@-webkit-keyframes slideh3 {
+  from {
+    -webkit-transform: translate(50%);
+            transform: translate(50%);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translate(0);
+            transform: translate(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideh3 {
+  from {
+    -webkit-transform: translate(50%);
+            transform: translate(50%);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translate(0);
+            transform: translate(0);
+    opacity: 1;
+  }
 }
 
 section#About .about_container .about_info .intro > h3:after {
@@ -231,10 +274,10 @@ section#About .about_container .Download_cv {
   font-weight: bold;
   background-color: #251170;
   border: none;
-  -webkit-transition: -webkit-transform 0.2s ease;
-  transition: -webkit-transform 0.2s ease;
-  transition: transform 0.2s ease;
-  transition: transform 0.2s ease, -webkit-transform 0.2s ease;
+  -webkit-animation-name: slideCV;
+          animation-name: slideCV;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
 }
 
 section#About .about_container .Download_cv:before {
@@ -242,6 +285,34 @@ section#About .about_container .Download_cv:before {
           transform: scale(1.1);
   border: none;
   cursor: pointer;
+}
+
+section#About .about_container .Download_cv:focus {
+  outline: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+@-webkit-keyframes slideCV {
+  from {
+    -webkit-transform: translate(50%);
+            transform: translate(50%);
+  }
+  to {
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
+}
+
+@keyframes slideCV {
+  from {
+    -webkit-transform: translate(50%);
+            transform: translate(50%);
+  }
+  to {
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
 }
 
 section#About .about_container .about_skills {

@@ -1,8 +1,10 @@
 import React from 'react';
 import './css/landing.css'
 // import ParticleComponent from '../ParticleComponent';
+import resume from '../../img/Naiyar_resume.pdf';
 
 export const About = () => {
+
     return (
         <section id="About">
             <div className="about_container">
@@ -11,7 +13,7 @@ export const About = () => {
                         <h3>I'm a Full Stack web developer working from home</h3>
                     </div>
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae, magnam error nisi pariatur labore ratione quam id voluptatum unde doloremque doloribus corporis, dolor nihil ullam, dignissimos harum mollitia dolorum quidem!</p>
-                    <div style={{zIndex: 10}}><button className="Download_cv" onClick={() => console.log('hello')}><span className="cv">DOWNLOAD CV</span></button></div>
+                    <div style={{zIndex: 10}}><a href={resume} download><button className="Download_cv"><span className="cv">DOWNLOAD CV</span></button></a></div>
                 </div>
                 <div className="about_skills">
                     <span>My Skills</span>

@@ -129,12 +129,21 @@ section{
         }
     }
     &#About{
-        .about_container{
+        position: relative;
+        background-color: #000;
+        #canvas1 {
+            position: absolute;
+            // z-index: -1;
+            top: 0;
+            left: 0;
+            height: 60vh;
+            width: 100vh;
             background-color: #000;
+        }
+        .about_container{
             position: relative;
             #tsparticles{
                 position: absolute;
-                
                 z-index: 1;
                 top: 0;
                 width: 100%;
@@ -156,6 +165,11 @@ section{
                     margin: 10px 0px 20px;
                     position: relative;
                     // line-height: 30px;
+                    @keyframes slideh3 {
+                        from{transform: translate(50%);
+                        opacity: 0;}
+                        to{transform: translate(0); opacity: 1;}
+                    }
                     &:after {
                         content: '';
                         width: 28%;
@@ -174,6 +188,8 @@ section{
                         left: 30%;
                         top: -30%;
                     }
+                    animation-name: slideh3;
+                    animation-duration: 1s;
                 }
                 h3 {
                     display: block;
@@ -181,6 +197,7 @@ section{
                     margin-block-end: 1em;
                     margin-inline-start: 0px;
                     margin-inline-end: 0px;
+            
                 }
                 p{
                     color: #ffffff;
@@ -191,6 +208,7 @@ section{
                 }
             }
             .Download_cv{
+               
                 position: relative;
                 z-index: 2;
                 margin: 1em 0em;
@@ -200,12 +218,21 @@ section{
                 font-weight: bold;
                 background-color: #251170;
                 border: none;
-                transition: transform 0.2s ease;
                 &:before{
                     transform: scale(1.1);
                     border: none;
                     cursor: pointer;
                 }
+                &:focus{
+                    outline: none;
+                    box-shadow: none;
+                }
+                @keyframes slideCV {
+                    from{transform: translate(50%);}
+                    to{transform: translate(0);}
+                }
+                animation-name: slideCV;
+                animation-duration: 3s;
             }
             .about_skills{
                 position: relative;
@@ -554,6 +581,8 @@ section{
         }
     }
 }
+
+
 
 
 // vertical-align: -0.125em;
